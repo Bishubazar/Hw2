@@ -1,0 +1,62 @@
+// font
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800&display=swap");
+// font-family: "M PLUS Rounded 1c", sans-serif;
+
+// Verela font
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+// font-family: 'Varela Round', sans-serif;
+
+@mixin btn($background, $border) {
+     background-color: $background;
+     border: 1px solid $border;
+}
+
+// Root
+$white: #fff;
+$dark: #161853;
+$darkBlue: #292c6d;
+$blossom: #ec255a;
+
+.btn {
+     padding: 15px 35px !important;
+     border-radius: 20px;
+     font-weight: bold;
+}
+.dark__btn {
+     background: $darkBlue;
+     color: $white !important;
+}
+.bright__btn {
+     background: $blossom;
+     border: 2px solid #faedf0;
+     color: $white;
+}
+h1,
+h2,
+h3 {
+     font-weight: 900;
+     font-family: "M PLUS Rounded 1c", sans-serif;
+     text-transform: uppercase;
+}
+.big__header {
+     font-size: 40px;
+     color: $dark;
+}
+.medium__header {
+     font-size: 35px;
+}
+.small__header {
+     font-size: 25px;
+     text-transform: none;
+}
+p {
+     font-family: "Varela Round", sans-serif;
+}
+.main__p {
+     font-size: 20px;
+     line-height: 1.6;
+}
+.small__p {
+     font-size: 14px;
+     line-height: 1.6;
+}
