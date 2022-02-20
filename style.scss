@@ -2,6 +2,7 @@
 @import "vars";
 @import "center";
 @import "grid";
+@import "hover";
 
 // Reset
 * {
@@ -10,11 +11,15 @@
      box-sizing: border-box;
 }
 
+html {
+     scroll-behavior: smooth;
+}
 body {
      font-family: "Varela Round", sans-serif;
 }
 a {
      text-decoration: none;
+     @include hover(0.7);
 }
 
 li {
