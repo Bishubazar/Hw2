@@ -3,215 +3,213 @@
 @import "center";
 @import "grid";
 @import "hover";
-
 // Reset
 * {
-     margin: 0;
-     padding: 0;
-     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
-     scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 body {
-     font-family: "Varela Round", sans-serif;
+    font-family: "Varela Round", sans-serif;
 }
+
 a {
-     text-decoration: none;
-     @include hover(0.7);
+    text-decoration: none;
+    @include hover(0.7);
 }
 
 li {
-     list-style: none;
+    list-style: none;
 }
 
 .container {
-     max-width: 1150px;
+    max-width: 1150px;
 }
+
 nav {
-     @include flexCenter(space-between, row);
-     padding: 40px 50px;
-     background: $white;
-     color: $dark;
-
-     // Nav logo
-     .nav__logo {
-          a {
-               font-weight: 900;
-               color: $dark;
-          }
-     }
-
-     // Nav lists
-     .nav__list {
-          @include flexCenter(center, row);
-          ul {
-               display: flex;
-               li {
-                    margin: 0 15px;
-                    a {
-                         padding: 10px;
-                         font-size: 16px;
-                         font-weight: bold;
-                         text-transform: uppercase;
-                         color: #333;
+    @include flexCenter(space-between, row);
+    padding: 40px 50px;
+    background: $white;
+    color: $dark;
+    // Nav logo
+    .nav__logo {
+        a {
+            font-weight: 900;
+            color: $dark;
+        }
+    }
+    // Nav lists
+    .nav__list {
+        @include flexCenter(center, row);
+        ul {
+            display: flex;
+            li {
+                margin: 0 15px;
+                a {
+                    padding: 10px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    color: #333;
+                    img {
+                        width: 150px;
                     }
-               }
-          }
-     }
+                }
+            }
+        }
+    }
 }
 
 .header {
-     @include flexCenter(center, column);
-     position: relative;
-     width: 100vw;
-     margin: 100px 0;
-     .container {
-          padding: 50px;
-          .header__content {
-               @include flexCenter(center, column);
-
-               .big__header {
-                    margin-bottom: 20px;
-               }
-               .main__p {
-                    margin-bottom: 50px;
-               }
-          }
-     }
-
-     // Absolute social icon /right side/
-     .social {
-          position: absolute;
-          right: 50px;
-          top: 50%;
-          transform: translate(-50%, -50%);
-          width: 10px;
-          color: $blossom;
-          grid-gap: 80px;
-          @include flexCenter(center, column);
-          .main__p {
-               transform: rotate(90deg);
-               white-space: nowrap;
-               &::before {
-                    content: "";
-                    position: absolute;
-                    right: -70px;
-                    top: 50%;
-                    width: 50px;
-                    height: 1px;
-                    background: $blossom;
-               }
-          }
-          .icons {
-               ul {
-                    @include flexCenter(space-between, column);
-                    height: 100px;
-                    a {
-                         padding: 10px;
-                         margin: 20px 0;
-                         color: $blossom;
-                         font-size: 18px;
-                    }
-               }
-          }
-     }
+    @include flexCenter(center, column);
+    position: relative;
+    width: 100vw;
+    margin: 100px 0;
+    .container {
+        padding: 50px;
+        .header__content {
+            @include flexCenter(center, column);
+            .big__header {
+                margin-bottom: 20px;
+            }
+            .main__p {
+                margin-bottom: 50px;
+            }
+        }
+    }
+    // Absolute social icon /right side/
+    .social {
+        position: absolute;
+        right: 50px;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px;
+        color: $blossom;
+        grid-gap: 80px;
+        @include flexCenter(center, column);
+        .main__p {
+            transform: rotate(90deg);
+            white-space: nowrap;
+            &::before {
+                content: "";
+                position: absolute;
+                right: -70px;
+                top: 50%;
+                width: 50px;
+                height: 1px;
+                background: $blossom;
+            }
+        }
+        .icons {
+            ul {
+                @include flexCenter(space-between, column);
+                height: 100px;
+                a {
+                    padding: 10px;
+                    margin: 20px 0;
+                    color: $blossom;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
 }
+
 #about {
-     width: 100vw;
-     background-color: $blossom;
-     padding: 150px 0 200px 0;
-     color: $white;
-     .container {
-          position: relative;
-          margin: auto;
-          .about__content {
-               text-align: center;
-               h2 {
-                    margin-bottom: 50px;
-               }
-          }
-
-          // Skill grid box
-          .skill__box {
-               @include gridBox(3, 0px);
-               width: 100%;
-               position: absolute;
-               background-color: $white;
-               bottom: -150%;
-               border: 1px solid $darkBlue;
-               border-radius: 30px;
-               overflow: hidden;
-
-               // Skill
-               .skill {
-                    border: 1px solid $darkBlue;
-                    padding: 50px;
-                    color: $dark;
-                    text-align: center;
-                    .skill__icon {
-                         color: $blossom;
-                         font-size: 45px;
-                    }
-                    .small__header {
-                         margin: 30px 0;
-                    }
-               }
-          }
-     }
+    width: 100vw;
+    background-color: $blossom;
+    padding: 150px 0 200px 0;
+    color: $white;
+    position: relative;
+    .container {
+        margin: auto;
+        .about__content {
+            text-align: center;
+            h2 {
+                margin-bottom: 50px;
+            }
+        }
+        // Skill grid box
+        .skill__box {
+            @include gridBox(3, 0px);
+            width: 100%;
+            position: absolute;
+            background-color: $white;
+            bottom: -300px;
+            border: 1px solid $darkBlue;
+            border-radius: 30px;
+            overflow: hidden;
+            // Skill
+            .skill {
+                border: 1px solid $darkBlue;
+                padding: 50px;
+                color: $dark;
+                text-align: center;
+                .skill__icon {
+                    color: $blossom;
+                    font-size: 45px;
+                }
+                .small__header {
+                    margin: 30px 0;
+                }
+            }
+        }
+    }
 }
 
 #projects {
-     @include flexCenter(center, column);
-     padding: 250px 0 200px 0;
-     .container {
-          text-align: center;
-          position: relative;
-          .medium__header,
-          .main__p {
-               margin: 20px;
-               color: $dark;
-          }
-
-          // Project grid box
-          .project__box {
-               @include gridBox(3, 20px);
-               margin: 60px 0;
-
-               // Project
-               .project {
-                    a {
-                         img {
-                              object-fit: cover;
-                              width: 100%;
-                              height: 275px;
-                              border-radius: 20px;
-                         }
+    @include flexCenter(center, column);
+    padding: 250px 0 200px 0;
+    .container {
+        text-align: center;
+        position: relative;
+        .medium__header,
+        .main__p {
+            margin: 20px;
+            color: $dark;
+        }
+        // Project grid box
+        .project__box {
+            @include gridBox(3, 20px);
+            margin: 60px 0;
+            // Project
+            .project {
+                a {
+                    img {
+                        object-fit: cover;
+                        width: 100%;
+                        height: 275px;
+                        border-radius: 20px;
                     }
-               }
-          }
-
-          // Banner
-          .banner {
-               @include gridBox(3, 0);
-               background: $dark;
-               position: absolute;
-               border-radius: 30px;
-               place-items: center;
-               padding: 70px 20px;
-               bottom: -35%;
-               z-index: 1;
-               .small__header,
-               .small__p {
-                    color: $white;
-               }
-          }
-     }
+                }
+            }
+        }
+        // Banner
+        .banner {
+            @include gridBox(3, 0);
+            background: $dark;
+            position: absolute;
+            border-radius: 30px;
+            place-items: center;
+            padding: 70px 20px;
+            bottom: -35%;
+            z-index: 1;
+            .small__header,
+            .small__p {
+                color: $white;
+            }
+        }
+    }
 }
+
 footer {
-     position: relative;
-     background-color: $darkBlue;
-     width: 100vw;
-     height: 400px;
+    position: relative;
+    background-color: $darkBlue;
+    width: 100vw;
+    height: 400px;
 }
