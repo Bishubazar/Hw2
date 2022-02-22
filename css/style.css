@@ -165,7 +165,6 @@ nav .nav__list ul li a {
 
 .header .container {
     padding: 50px;
-    position: relative;
 }
 
 .header .container .header__content {
@@ -266,7 +265,7 @@ nav .nav__list ul li a {
 }
 
 #about .container {
-    //     position: relative;
+    position: relative;
     margin: auto;
 }
 
