@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+.btn {
+  padding: 13px 25px !important;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.dark__btn {
+  background: #292c6d;
+  color: #fff !important;
+}
+
+.bright__btn {
+  background: #ec255a;
+  border: 2px solid #faedf0;
+  color: #fff;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 900;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  text-transform: uppercase;
+}
+
+.big__header {
+  font-size: 40px;
+  color: #161853;
+}
+
+.medium__header {
+  font-size: 35px;
+}
+
+.small__header {
+  font-size: 25px;
+  text-transform: none;
+}
+
+p {
+  font-family: "Varela Round", sans-serif;
+}
+
+.main__p {
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.small__p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+.about__container {
+  width: 700px;
+}
+
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 100px 0;
+  position: relative;
+}
+
+#about::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background: url(/img/aboutBG.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#about .about__container {
+  padding: 30px;
+  background-color: #fff;
+  z-index: 10;
+}
+
+#about .about__container article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  grid-gap: 50px;
+  margin: 20px 0;
+}
+
+#about .about__container article .small__header {
+  font-size: 18px;
+  color: #161853;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+#about .about__container article .small__text {
+  font-size: 13px;
+  color: #333;
+  font-weight: bold;
+}
+
+#about .about__container article img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+
+#about .about__container article .content__left,
+#about .about__container article .content__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#about .about__container .text {
+  padding: 20px 30px;
+}
+
+#about .about__container .text .content__right {
+  margin-left: 30px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .container .nav__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+footer .container .nav__logo img {
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 30px;
+}
+
+footer .container .nav__logo .small__header {
+  color: #fff;
+}
+
+footer .container .nav__logo:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=about.css.map */
